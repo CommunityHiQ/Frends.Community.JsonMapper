@@ -65,6 +65,38 @@ Simple example of combining two values from source JSON:
 }
 ```
 
+#### Known issues
+
+Json which root node is of type array does not work. It has to wrapped around an object.
+Example:
+
+Input
+```json
+[{
+  "Name": "John Doe"
+},
+{
+  "Name": "John Doe"
+}]
+```
+with Json Map
+```json
+{
+  "Name": "#valueof($.[0].firstName)"
+}
+```
+**throws exception in transformation**. This can be avoided by wrapping Input Json as follows:
+
+```json
+{ "root":
+[{
+  "Name": "John Doe"
+},
+{
+  "Name": "John Doe"
+}]
+}
+```
 ___
 
 License
