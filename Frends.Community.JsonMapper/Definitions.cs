@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Frends.Community.JsonMapper
 {
+    #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
     public class InputProperties
     {
         /// <summary>

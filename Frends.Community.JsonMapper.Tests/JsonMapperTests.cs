@@ -80,6 +80,16 @@ namespace Frends.Community.JsonMapper.Tests
             Assert.AreEqual(false, breething.Value<bool>());
         }
 
+        [Test]
+        [Ignore("JUST.net does not work with JSON which root element is array type")]
+        public void TransformWorksWithArrayRootElement()
+        {
+            _testInput.InputJson = @"[{""key"":""first element""},{""key"":""second element""}]";
+            _testInput.JsonMap = @"{""firstElement"":""#valueof($.[0].key)""}";
+
+            var result = JsonMapperTask.Transform(_testInput);
+        }
+
 
         [Test]
         public void InvalidJsonInputThrowsException()

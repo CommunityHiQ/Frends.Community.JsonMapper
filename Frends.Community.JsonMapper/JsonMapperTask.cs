@@ -4,12 +4,14 @@ using System;
 
 namespace Frends.Community.JsonMapper
 {
+    #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
     public class JsonMapperTask
     {
         /// <summary>
         /// Maps input json using JUST.Net library. 
-        /// JsonMapper Task documentation: TODO
-        /// JUST.Net documentation: https://github.com/WorkMaze/JUST.net#just
+        /// JsonMapper Task documentation: 'https://github.com/CommunityHiQ/Frends.Community.JsonMapper'
+        /// JUST.Net documentation: 'https://github.com/WorkMaze/JUST.net#just'
         /// </summary>
         /// <param name="input"></param>
         /// <returns>Object { string Result, JToken ToJson() }</returns>

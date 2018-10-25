@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B7598A6-EA34-4B9B-A9E9-1058E9549012}"
 	ProjectSection(SolutionItems) = preProject
 		nuspec\Frends.Community.JsonMapper.nuspec = nuspec\Frends.Community.JsonMapper.nuspec
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
