@@ -1,3 +1,5 @@
+This repository has been archived and the task has been moved to https://github.com/CommunityHiQ/Frends.Community.JSON
+
 # Frends.Community.JsonMapper
 Json message mapper Task for FRENDS.
 
